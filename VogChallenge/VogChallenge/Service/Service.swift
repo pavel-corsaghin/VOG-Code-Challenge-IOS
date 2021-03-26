@@ -13,7 +13,7 @@ class Service: ServiceProtocol {
     static let shared = Service()
     
     static let sessionManager: Alamofire.Session = {
-        let manager = ServerTrustManager(evaluators: [REAL_API_DOMAIN: DisabledTrustEvaluator()])
+        let manager = ServerTrustManager(evaluators: [REAL_DOMAIN: DisabledTrustEvaluator()])
         let session = Session(serverTrustManager: manager)
         return session
     }()
@@ -45,7 +45,6 @@ class Service: ServiceProtocol {
     func changePassword(passwordChange: [String : Any], completion: @escaping ((Result<String?, Error>) -> Void)) {
         let request = ChangePasswordRequest(body: passwordChange)
         Service.sessionManager.request(request.request()).responseDecodable { (response:AFDataResponse<PasswordChangeResponse>) in
-            print(response)
             switch response.result{
             case .success(let passwordChangeResponse):
                 completion(.success(passwordChangeResponse.message))
