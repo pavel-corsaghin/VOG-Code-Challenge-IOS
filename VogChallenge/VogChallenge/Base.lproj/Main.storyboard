@@ -151,23 +151,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idX-uH-TSx">
-                                                    <rect key="frame" x="16" y="17.5" width="156" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter current password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f03-2Z-Yg5">
-                                                    <rect key="frame" x="200" y="17" width="204" height="25.5"/>
+                                                    <rect key="frame" x="16" y="17.5" width="388" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="idX-uH-TSx" firstAttribute="centerY" secondItem="aji-jr-y0P" secondAttribute="centerY" id="4FC-PJ-X7e"/>
-                                                <constraint firstItem="idX-uH-TSx" firstAttribute="leading" secondItem="aji-jr-y0P" secondAttribute="leading" constant="16" id="YOj-LI-C0a"/>
                                                 <constraint firstAttribute="trailing" secondItem="f03-2Z-Yg5" secondAttribute="trailing" constant="10" id="kRJ-GV-6ML"/>
-                                                <constraint firstItem="f03-2Z-Yg5" firstAttribute="leading" secondItem="aji-jr-y0P" secondAttribute="leading" constant="200" id="oFI-aL-pQk"/>
+                                                <constraint firstItem="f03-2Z-Yg5" firstAttribute="leading" secondItem="aji-jr-y0P" secondAttribute="leading" constant="16" id="oFI-aL-pQk"/>
                                                 <constraint firstItem="f03-2Z-Yg5" firstAttribute="centerY" secondItem="aji-jr-y0P" secondAttribute="centerY" id="vWZ-uA-Oqc"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -179,24 +171,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdp-qg-tjj">
-                                                    <rect key="frame" x="16" y="17.5" width="129" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLW-XO-fLW">
-                                                    <rect key="frame" x="200" y="17" width="204" height="25.5"/>
+                                                    <rect key="frame" x="16" y="17.5" width="388" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qLW-XO-fLW" firstAttribute="leading" secondItem="wNF-cG-sc8" secondAttribute="leading" constant="200" id="5xC-5G-mhR"/>
+                                                <constraint firstItem="qLW-XO-fLW" firstAttribute="leading" secondItem="wNF-cG-sc8" secondAttribute="leading" constant="16" id="5xC-5G-mhR"/>
                                                 <constraint firstItem="qLW-XO-fLW" firstAttribute="centerY" secondItem="wNF-cG-sc8" secondAttribute="centerY" id="kNz-CC-HxN"/>
-                                                <constraint firstItem="gdp-qg-tjj" firstAttribute="leading" secondItem="wNF-cG-sc8" secondAttribute="leading" constant="16" id="nhq-2x-9JB"/>
                                                 <constraint firstAttribute="trailing" secondItem="qLW-XO-fLW" secondAttribute="trailing" constant="10" id="t2o-QS-DcM"/>
-                                                <constraint firstItem="gdp-qg-tjj" firstAttribute="centerY" secondItem="wNF-cG-sc8" secondAttribute="centerY" id="yWq-DZ-F47"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -207,22 +191,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-enter Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaC-KA-xw1">
-                                                    <rect key="frame" x="16" y="17.5" width="166.5" height="24"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqj-pl-pcb">
+                                                    <rect key="frame" x="16" y="17.5" width="388" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqj-pl-pcb">
-                                                    <rect key="frame" x="200" y="17" width="204" height="25.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="uqj-pl-pcb" firstAttribute="leading" secondItem="MDa-ln-pAA" secondAttribute="leading" constant="200" id="VVB-Ta-fGX"/>
-                                                <constraint firstItem="qaC-KA-xw1" firstAttribute="centerY" secondItem="MDa-ln-pAA" secondAttribute="centerY" id="WCH-7L-3Gf"/>
-                                                <constraint firstItem="qaC-KA-xw1" firstAttribute="leading" secondItem="MDa-ln-pAA" secondAttribute="leading" constant="16" id="YDE-db-d9o"/>
+                                                <constraint firstItem="uqj-pl-pcb" firstAttribute="leading" secondItem="MDa-ln-pAA" secondAttribute="leading" constant="16" id="VVB-Ta-fGX"/>
                                                 <constraint firstItem="uqj-pl-pcb" firstAttribute="centerY" secondItem="MDa-ln-pAA" secondAttribute="centerY" id="tmq-r6-2I9"/>
                                                 <constraint firstAttribute="trailing" secondItem="uqj-pl-pcb" secondAttribute="trailing" constant="10" id="wbd-sj-u86"/>
                                             </constraints>

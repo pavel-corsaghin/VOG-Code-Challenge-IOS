@@ -20,9 +20,6 @@ class Service: ServiceProtocol {
     
     func getUserProfile(completion: @escaping ((Result<UserProfileModel, Error>) -> Void)) {
         let request = GetEventListApiRequest();
-        Service.sessionManager.request(request.request()).responseJSON { json in
-            print(json)
-        }
         Service.sessionManager.request(request.request()).responseDecodable(of: UserProfileResponse.self) { response in
             switch response.result{
             case .success(let useProfileResponse):
