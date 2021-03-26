@@ -32,7 +32,7 @@ protocol BaseAPIRequest {
 extension BaseAPIRequest{
     
     var endPoint: EndPoint {
-        return .RealAPI
+        return .MockAPI
     }
     
     var baseUrl: String {

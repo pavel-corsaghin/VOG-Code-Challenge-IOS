@@ -1,0 +1,26 @@
+{
+  "mine": {
+    "message": "User Retrieved",
+    "data":
+        {
+            "firstName": "Johnny B",
+            "userName": "iOS User",
+            "lastName": "Goode"
+        }
+  },
+  "update": {
+    "message": "User Retrieved",
+    "data":
+        {
+            "firstName": "Johnny B",
+            "userName": "iOS User",
+            "lastName": "Goode"
+        }
+  },
+  "change": {
+    "data": {},
+    "code": "string",
+    "message": "Password Changed",
+    "exceptionName": null
+  }
+}

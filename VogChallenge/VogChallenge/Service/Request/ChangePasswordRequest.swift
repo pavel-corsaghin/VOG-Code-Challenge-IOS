@@ -9,9 +9,11 @@ import Foundation
 
 class ChangePasswordRequest: BaseAPIRequest {
     var requestBody: [String : Any]?
-
-    var requestMethod: RequestHttpMethod? = RequestHttpMethod.Post
-            
+    
+    var requestMethod: RequestHttpMethod? {
+        return endPoint == .MockAPI ? .Get : .Post
+    }
+    
     var requestPath: String = "/password/change"
     
     init(body: [String : Any]) {
