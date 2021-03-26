@@ -1,0 +1,13 @@
+{
+  "profiles": {
+      {
+              "message": "User Retrieved",
+              "data":
+              {
+                  "firstName": "Johnny B",
+                  "userName": "iOS User",
+                  "lastName": "Goode"
+              }
+    }
+  }
+}
